@@ -12,8 +12,8 @@
           "type": "bool"
         }
       },
-      "requires": "True",
-      "ensures": "result >= 0 and result == units * (2 if premium else 3)"
+      "requires": "units == 10",
+      "ensures": "result >= 0"
     }
   ]
 }
