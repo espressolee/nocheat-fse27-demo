@@ -1,0 +1,15 @@
+[project]
+name = "nocheat-fse27-demo"
+version = "0.1.0"
+description = "Companion demonstration repository for NoCheat Merge Gate (FSE 2027 Tool Demonstrations)"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,19 @@
+{
+  "contracts": [
+    {
+      "target": "billing:charge",
+      "inputs": {
+        "units": {
+          "type": "int",
+          "min": 0,
+          "max": 1000
+        },
+        "premium": {
+          "type": "bool"
+        }
+      },
+      "requires": "True",
+      "ensures": "result >= 0 and result == units * (2 if premium else 3)"
+    }
+  ]
+}
